@@ -8,7 +8,7 @@ REM
 echo echo off > c:\temp\deletes.bat
 for /r "H:\username\Music" %%X in (.AppleDouble) do (
 	If exist "%%X" (
-		echo rmdir /q "%%X" >> c:\temp\deletes.bat
+		echo rmdir /q /s "%%X" >> c:\temp\deletes.bat
 	)
 )
 CALL C:\temp\deletes.bat
